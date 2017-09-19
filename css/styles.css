@@ -1,5 +1,5 @@
 .parallax-container {
-    min-height: 380px;
+    min-height: 350px;
     line-height: 0;
     height: auto;
     color: rgba(255,255,255,.9);    
@@ -8,23 +8,29 @@
     width: 100%;
 }
   
-  @media only screen and (max-width : 992px) {
+@media only screen and (max-width : 992px) {
     .parallax-container .section {
-      position: absolute;
-      top: 40%;
+        position: absolute;
+        top: 40%;
     }
     #index-banner .section {
-      top: 10%;
+        top: 10%;
     }
-  }
-  
-  @media only screen and (max-width : 600px) {
+}
+
+@media only screen and (max-width : 600px) {
     #index-banner .section {
-      top: 0;
+        top: 0;
     }
-  }
+}
+
+.parallax img { 
+    width: 200em;
+    height: auto;
+}
   
-  .parallax img { width: 150%; }
-  
+.monospace {
+    font-family: Courier-New, Courier, monospace;
+}
   
   
