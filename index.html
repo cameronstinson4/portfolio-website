@@ -10,28 +10,29 @@
 
     </head>
     <body class = "blue-grey lighten-5">
-
-        <nav class ="blue lighten-1"> 
-            <div class="nav-wrapper">
-                <a class="btn-floating btn-large waves-effect waves-light yellow ">CS</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="">About</a></li>                        
-                    <li><a href="">Experience</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Personal</a></li>
-                </ul>
-            </div>
-        </nav>
+        <div class="navbar-fixed">
+            <nav class ="blue lighten-1"> 
+                <div class="nav-wrapper">
+                    <a class="btn-floating btn-large waves-effect waves-light yellow ">CS</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li id="aboutButton" class="active"><a href="">About</a></li>                        
+                        <li id="experienceButton"><a href="">Experience</a></li>
+                        <li id="projectsButton"><a href="">Projects</a></li>
+                        <li id="personalButton"><a href="">Personal</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
 
         <header>
-            <div id="index-banner" class="parallax-container">
+            <div id="index-banner" class="parallax-container valign-wrapper">
                 <div class="section">
                     <div class="container">
                     <br><br>
-                    <h2 class="header center cyan-text text-darken-1 monospace">function CameronStinson() {</h2>
-                    <h5 class="header left cyan-text text-darken-1 monospace">doSoftware();</h5>
-                    <h5 class="header left cyan-text text-darken-1 monospace">doEngineering();</h5>
-                    <h5 class="header left cyan-text text-darken-1 monospace">}</h5>
+                    <h2 class="header cyan-text text-darken-1 monospace">function CameronStinson() {</h2>
+                    <h5 class="header cyan-text text-darken-1 monospace">&nbsp&nbspdoSoftware();</h5>
+                    <h5 class="header cyan-text text-darken-1 monospace">&nbsp&nbspdoEngineering();</h5>
+                    <h5 class="header cyan-text text-darken-1 monospace">}</h5>
                     
                     <br><br>
             
@@ -44,31 +45,79 @@
 
 
         <main>
-            <div class = "container">
-                <p>
+            <div id="about" class = "container scale-transition scale-in">
+                <p class="flow-text">
                     Hello Jerry, come to rub my face in urine again? Oh fuck. Awwww thanks, bitch! Close. It's gonna make your kidneys shut down.
                 </p>
-                <p>
+                <p class="flow-text">
                     I wish that shotgun was my penis. Why'd you even rope me into this?! Aw, man! I really liked this life! Well, at least I didn't really crap my pants. I know the two of you are very different from each other in a lot of ways, but you have to understand that as far as Grandpa's concerned, you're both pieces of shit! Yeah. I can prove it mathematically. Actually, l-l-let me grab my whiteboard. This has been a long time coming, anyways.
                 </p>
-                <p>
+                <p class="flow-text">
                     You created a day care for my dad? Not so fast Morty. You heard your mom. We've got adventures to go on, Morty. Just you and me. And sometimes your sister, and sometimes your mom, but never your dad. You wanna know why, Morty? Because he crossed me. Oh, it gets darker, Morty. Welcome to the darkest year of our adventures. First thing that's different? No more dad, Morty. Life is effort and I'll stop when I die!
                 </p>
-                <p>
+                <p class="flow-text">
                     Lick, lick, lick my balls! If I've learned one thing, it's that before you get anywhere in life, you gotta stop listening to yourself. We are created to serve a singular purpose, for which we will go to any lengths to fulfill! Ohh yea, you gotta get schwifty.
                 </p>
-                <p>
+                <p class="flow-text">
                     Hello Jerry, come to rub my face in urine again? Oh fuck. Awwww thanks, bitch! Close. It's gonna make your kidneys shut down.
                 </p>
-                <p>
+                <p class="flow-text">
                     I wish that shotgun was my penis. Why'd you even rope me into this?! Aw, man! I really liked this life! Well, at least I didn't really crap my pants. I know the two of you are very different from each other in a lot of ways, but you have to understand that as far as Grandpa's concerned, you're both pieces of shit! Yeah. I can prove it mathematically. Actually, l-l-let me grab my whiteboard. This has been a long time coming, anyways.
                 </p>
-                <p>
+                <p class="flow-text">
                     You created a day care for my dad? Not so fast Morty. You heard your mom. We've got adventures to go on, Morty. Just you and me. And sometimes your sister, and sometimes your mom, but never your dad. You wanna know why, Morty? Because he crossed me. Oh, it gets darker, Morty. Welcome to the darkest year of our adventures. First thing that's different? No more dad, Morty. Life is effort and I'll stop when I die!
                 </p>
-                <p>
+                <p class="flow-text">
                     Lick, lick, lick my balls! If I've learned one thing, it's that before you get anywhere in life, you gotta stop listening to yourself. We are created to serve a singular purpose, for which we will go to any lengths to fulfill! Ohh yea, you gotta get schwifty.
                 </p>
+            </div>
+
+            <div id="experience" class="container scale-transition scale-out nosize">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/office.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                        <p><a href="#">This is a link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>              
+            </div>
+
+            <div id="projects" class="container scale-transition scale-out nosize">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/office.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                        <p><a href="#">This is a link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>              
+            </div>
+
+            <div id="personal" class="container scale-transition scale-out nosize">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/office.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                        <p><a href="#">This is a link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>              
             </div>
         </main>
 
