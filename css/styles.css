@@ -7,10 +7,6 @@
 
 .parallax img { width: 100%; }
 
-img {
-    filter:blur(0.1px);
-}
-
 .parallax-container .section {
     width: 100%;
 }
@@ -28,3 +24,17 @@ img {
     height: 100%;
 }
 
+header {
+    height: 91%;
+}
+.container.left {
+    width: 50%;
+    top: 45%;
+    position: absolute;
+}
+nav ul li.active {
+    background-color: #ff3d00;
+}
+.big-text {
+    font-size: 2em;
+}
