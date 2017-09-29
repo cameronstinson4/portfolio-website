@@ -31,6 +31,10 @@
         var changeContentPage = function (event, button, id) {
             event.preventDefault();
 
+            $('html, body').animate({
+                scrollTop: $("#mainLink").offset().top - $("nav").height()
+            }, 1000);
+
             $('.carousel').carousel('set', id);
 
             activeNav.removeClass("active");
@@ -64,11 +68,13 @@
             else if ($(document).scrollTop() <= window.innerHeight / 2) {
                 if (!isNavTitleHidden) {
                     //hiding nav title
-                    navTitle.css({ "margin-left": '-=' + navTitleOffset });
+                    navTitle.animate({ "margin-left": '-=' + navTitleOffset });
                     isNavTitleHidden = true;
                 }
             }
         });
+
+
     }); // end of document ready
 })(jQuery); // end of jQuery name space
 
