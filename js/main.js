@@ -21,26 +21,26 @@
             }
         }
 
-        function addHexagons() {
-            const numHexes = 100;
-            var hexList = $("#hexGrid");
+        // function addHexagons() {
+        //     const numHexes = 100;
+        //     var hexList = $("#hexGrid");
 
-            for (let i = 0; i < numHexes; i++) {
-                hexList.append(`
-                <li class="hex">
-                    <div class="hexIn">
-                        <a class="hexLink" href="#">
-                            <div class="hexContent"></div>
-                        </a>
-                    </div>
-                </li>`)
-            }
-        }
+        //     for (let i = 0; i < numHexes; i++) {
+        //         hexList.append(`
+        //         <li class="hex">
+        //             <div class="hexIn">
+        //                 <a class="hexLink" href="#">
+        //                     <div class="hexContent"></div>
+        //                 </a>
+        //             </div>
+        //         </li>`)
+        //     }
+        // }
 
         //hide the nav bar title at the beginining
         toggleNavTitle();
         //add hexagons
-        addHexagons();
+        // addHexagons();
 
         $('.carousel').carousel({ fullWidth: true, indicators: false });
 
