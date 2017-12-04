@@ -21,26 +21,7 @@
             }
         }
 
-        // function addHexagons() {
-        //     const numHexes = 100;
-        //     var hexList = $("#hexGrid");
-
-        //     for (let i = 0; i < numHexes; i++) {
-        //         hexList.append(`
-        //         <li class="hex">
-        //             <div class="hexIn">
-        //                 <a class="hexLink" href="#">
-        //                     <div class="hexContent"></div>
-        //                 </a>
-        //             </div>
-        //         </li>`)
-        //     }
-        // }
-
-        //hide the nav bar title at the beginining
         toggleNavTitle();
-        //add hexagons
-        // addHexagons();
 
         $('.carousel').carousel({ fullWidth: true, indicators: false });
 
@@ -50,9 +31,18 @@
         var changeContentPage = function (event, button, id) {
             event.preventDefault();
 
-            $('html, body').animate({
-                scrollTop: $("#mainLink").offset().top - $("nav").height()
-            }, 1000);
+
+            var page = $('html, body');
+
+            page.on("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove", function(){
+                page.stop();
+            });
+
+            page.animate({
+                scrollTop: $("#mainLink").offset().top - $("nav").height(),
+            }, 1000, () => {
+                page.off("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove");                
+            });
 
             $('.carousel').carousel('set', id);
 
