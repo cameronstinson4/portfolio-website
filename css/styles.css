@@ -1,20 +1,13 @@
-.parallax-container {
-    min-height: 300;
-    line-height: 0;
-    height: auto;
-    color: rgba(255,255,255,.9);    
+
+.height-100 {
+    height: 100%;
 }
 
-.parallax-container .section {
-    width: 100%;
-}
-
-#bottom-banner {
-    width: 100%;
+.height-66 {
+    height: 66%;
 }
 
 .tabs-content.carousel .carousel-item {
-     
     height: 100%; 
 }
 
@@ -23,10 +16,10 @@
 }
 
 header {
-    height: 91%;
+    height: 92%;
 }
 
-.container.left {
+#title {
     width: 50%;
     top: 45%;
     position: absolute;
@@ -49,18 +42,33 @@ nav ul li.active a{
     height: 100%;
 }
 
-.parallax img { width: 100%; }
-
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 768px) {
     .parallax img {
       max-height: 130%; /* or a little bit higher */
     }
+    #scrolledTitle {
+        display: none;
+    }
+    html {
+        font-size: 13px;
+    }
+    #title {
+        width: 100%;
+    }
+    ul.right {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .nav-item {
+        width: 25%;
+        text-align: center;
+    }
   }
   
-  @media only screen and (min-width: 993px) {
+@media only screen and (min-width: 768px) {
     .parallax img {
       max-height: 170%; /* or higher percentages. It's up to your taste */
     }
-  }.parallax img { width: 100%; }
-  .parallax img { width: 100%; }
+}
   
