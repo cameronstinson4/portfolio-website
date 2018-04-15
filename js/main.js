@@ -25,7 +25,6 @@
 
         $('.carousel').carousel({ fullWidth: true, indicators: false });
 
-        $('.button-collapse').sideNav();
         $('.parallax').parallax();
 
         var changeContentPage = function (event, button, id) {
