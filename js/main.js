@@ -7,6 +7,10 @@
         var navTitle = $('#scrolledTitle');
         var isNavTitleHidden = false;
         const navTitleOffset = navTitle[0].clientWidth;
+        const carouselPadding = 15;
+
+        //set carousel height initially
+        $(".carousel").css("height", `${ $("#about").height() + carouselPadding}px`);
 
         function toggleNavTitle() {
             if (isNavTitleHidden) {
@@ -54,15 +58,23 @@
 
         $("#experienceButton").on("click", function (event) {
             changeContentPage(event, this, 1);
+            var height = $("#experience").height();
+            $(".carousel").css("height", `${height + carouselPadding}px`);
         })
         $("#projectsButton").on("click", function (event) {
             changeContentPage(event, this, 2);
+            var height = $("#projects").height();
+            $(".carousel").css("height", `${height + carouselPadding}px`);
         })
         $("#personalButton").on("click", function (event) {
             changeContentPage(event, this, 3);
+            var height = $("#personal").height();
+            $(".carousel").css("height", `${height + carouselPadding}px`);
         })
         $("#aboutButton").on("click", function (event) {
             changeContentPage(event, this, 4);
+            var height = $("#about").height();
+            $(".carousel").css("height", `${height + carouselPadding}px`);
         })
 
         $(window).scroll(function () {
@@ -81,6 +93,15 @@
                 }
             }
         });
+
+        //mobile responsive about card
+        function checkPosition() {
+            if (window.matchMedia('(max-width: 768px)').matches) {
+                $(".card.horizontal").removeClass("horizontal");
+            }
+        }
+
+        checkPosition()
 
 
     }); // end of document ready
