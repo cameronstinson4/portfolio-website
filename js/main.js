@@ -9,9 +9,6 @@
         const navTitleOffset = navTitle[0].clientWidth;
         const carouselPadding = 15;
 
-        //set carousel height initially
-        $(".carousel").css("height", `${ $("#about").height() + carouselPadding}px`);
-
         function toggleNavTitle() {
             if (isNavTitleHidden) {
                 //show nav bar title
@@ -37,14 +34,14 @@
 
             var page = $('html, body');
 
-            page.on("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove", function(){
+            page.on("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove", function () {
                 page.stop();
             });
 
             page.animate({
                 scrollTop: $("#mainLink").offset().top - $("nav").height(),
             }, 1000, () => {
-                page.off("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove");                
+                page.off("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove");
             });
 
             $('.carousel').carousel('set', id);
@@ -75,6 +72,7 @@
             changeContentPage(event, this, 4);
             var height = $("#about").height();
             $(".carousel").css("height", `${height + carouselPadding}px`);
+            console.log(height)
         })
 
         $(window).scroll(function () {
@@ -102,6 +100,8 @@
         }
 
         checkPosition()
+
+        $(".carousel").css("height", `${$("#about").height() + carouselPadding}px`);
 
 
     }); // end of document ready
