@@ -31,7 +31,6 @@
         var changeContentPage = function (event, button, id) {
             event.preventDefault();
 
-
             var page = $('html, body');
 
             page.on("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove", function () {
@@ -72,7 +71,6 @@
             changeContentPage(event, this, 4);
             var height = $("#about").height();
             $(".carousel").css("height", `${height + carouselPadding}px`);
-            console.log(height)
         })
 
         $(window).scroll(function () {
