@@ -104,6 +104,12 @@
         $(document).ready(function () {
             $('.materialboxed').materialbox();
         });
+
+        $(window).resize(function () {
+            if ($(window).width() <= 800) {
+                $('#about-card').removeClass("horizontal")
+            }
+        });
     }); // end of document ready
 })(jQuery); // end of jQuery name space
 
