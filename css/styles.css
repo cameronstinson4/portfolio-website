@@ -95,4 +95,9 @@ nav ul li.active a{
       max-height: 170%; /* or higher percentages. It's up to your taste */
     }
 }
-  
+
+@media only screen and (min-width: 993px) {}
+    .container {
+        width: 85%;
+    }
+}
