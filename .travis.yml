@@ -2,9 +2,10 @@ language: node_js
 node_js:
 - node
 before_script:
-  npm --version
+- npm i -g gatsby
+- npm i
 script:
-  npm --version
+- npm run build
 deploy:
   provider: s3
   access_key_id: $S3_ACCESS_KEY_ID
