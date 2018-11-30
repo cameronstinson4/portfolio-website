@@ -1,15 +1,15 @@
-language: node_js
-node_js:
-- node
-before_script:
-  npm --version
-script:
-  npm --version
-deploy:
-  provider: s3
-  access_key_id: $S3_ACCESS_KEY_ID
-  secret_access_key: $S3_SECRET_ACCESS_KEY  
-  bucket: cameronstinson.com
-  local-dir: .
-  acl: public_read
-  skip_cleanup: true
+# language: node_js
+# node_js:
+# - node
+# before_script:
+#   npm --version
+# script:
+#   npm --version
+# deploy:
+#   provider: s3
+#   access_key_id: $S3_ACCESS_KEY_ID
+#   secret_access_key: $S3_SECRET_ACCESS_KEY  
+#   bucket: cameronstinson.com
+#   local-dir: .
+#   acl: public_read
+#   skip_cleanup: true
